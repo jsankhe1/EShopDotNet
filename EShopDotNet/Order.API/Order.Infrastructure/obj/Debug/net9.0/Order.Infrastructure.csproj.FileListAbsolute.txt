@@ -1,0 +1,35 @@
+/Users/psionicedge/Library/Mobile Documents/com~apple~CloudDocs/Work/Antra Instructor Files/Assignments/DotNetWebApiProject/Order.API/Order.Infrastructure/bin/Debug/net9.0/Order.Infrastructure.deps.json
+/Users/psionicedge/Library/Mobile Documents/com~apple~CloudDocs/Work/Antra Instructor Files/Assignments/DotNetWebApiProject/Order.API/Order.Infrastructure/bin/Debug/net9.0/Order.Infrastructure.runtimeconfig.json
+/Users/psionicedge/Library/Mobile Documents/com~apple~CloudDocs/Work/Antra Instructor Files/Assignments/DotNetWebApiProject/Order.API/Order.Infrastructure/bin/Debug/net9.0/Order.Infrastructure.dll
+/Users/psionicedge/Library/Mobile Documents/com~apple~CloudDocs/Work/Antra Instructor Files/Assignments/DotNetWebApiProject/Order.API/Order.Infrastructure/bin/Debug/net9.0/Order.Infrastructure.pdb
+/Users/psionicedge/Library/Mobile Documents/com~apple~CloudDocs/Work/Antra Instructor Files/Assignments/DotNetWebApiProject/Order.API/Order.Infrastructure/bin/Debug/net9.0/Order.ApplicationCore.dll
+/Users/psionicedge/Library/Mobile Documents/com~apple~CloudDocs/Work/Antra Instructor Files/Assignments/DotNetWebApiProject/Order.API/Order.Infrastructure/bin/Debug/net9.0/Order.ApplicationCore.pdb
+/Users/psionicedge/Library/Mobile Documents/com~apple~CloudDocs/Work/Antra Instructor Files/Assignments/DotNetWebApiProject/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.Infrastructure.csproj.AssemblyReference.cache
+/Users/psionicedge/Library/Mobile Documents/com~apple~CloudDocs/Work/Antra Instructor Files/Assignments/DotNetWebApiProject/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/psionicedge/Library/Mobile Documents/com~apple~CloudDocs/Work/Antra Instructor Files/Assignments/DotNetWebApiProject/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.Infrastructure.AssemblyInfoInputs.cache
+/Users/psionicedge/Library/Mobile Documents/com~apple~CloudDocs/Work/Antra Instructor Files/Assignments/DotNetWebApiProject/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.Infrastructure.AssemblyInfo.cs
+/Users/psionicedge/Library/Mobile Documents/com~apple~CloudDocs/Work/Antra Instructor Files/Assignments/DotNetWebApiProject/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/psionicedge/Library/Mobile Documents/com~apple~CloudDocs/Work/Antra Instructor Files/Assignments/DotNetWebApiProject/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.Infrastructure.sourcelink.json
+/Users/psionicedge/Library/Mobile Documents/com~apple~CloudDocs/Work/Antra Instructor Files/Assignments/DotNetWebApiProject/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.In.AA82CA84.Up2Date
+/Users/psionicedge/Library/Mobile Documents/com~apple~CloudDocs/Work/Antra Instructor Files/Assignments/DotNetWebApiProject/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.Infrastructure.dll
+/Users/psionicedge/Library/Mobile Documents/com~apple~CloudDocs/Work/Antra Instructor Files/Assignments/DotNetWebApiProject/Order.API/Order.Infrastructure/obj/Debug/net9.0/refint/Order.Infrastructure.dll
+/Users/psionicedge/Library/Mobile Documents/com~apple~CloudDocs/Work/Antra Instructor Files/Assignments/DotNetWebApiProject/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.Infrastructure.pdb
+/Users/psionicedge/Library/Mobile Documents/com~apple~CloudDocs/Work/Antra Instructor Files/Assignments/DotNetWebApiProject/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.Infrastructure.genruntimeconfig.cache
+/Users/psionicedge/Library/Mobile Documents/com~apple~CloudDocs/Work/Antra Instructor Files/Assignments/DotNetWebApiProject/Order.API/Order.Infrastructure/obj/Debug/net9.0/ref/Order.Infrastructure.dll
+/Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.Infrastructure/bin/Debug/net9.0/Order.Infrastructure.deps.json
+/Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.Infrastructure/bin/Debug/net9.0/Order.Infrastructure.runtimeconfig.json
+/Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.Infrastructure/bin/Debug/net9.0/Order.Infrastructure.dll
+/Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.Infrastructure/bin/Debug/net9.0/Order.Infrastructure.pdb
+/Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.Infrastructure/bin/Debug/net9.0/Order.ApplicationCore.dll
+/Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.Infrastructure/bin/Debug/net9.0/Order.ApplicationCore.pdb
+/Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.Infrastructure.csproj.AssemblyReference.cache
+/Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.Infrastructure.AssemblyInfoInputs.cache
+/Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.Infrastructure.AssemblyInfo.cs
+/Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.In.AA82CA84.Up2Date
+/Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.Infrastructure.dll
+/Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.Infrastructure/obj/Debug/net9.0/refint/Order.Infrastructure.dll
+/Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.Infrastructure.pdb
+/Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.Infrastructure.genruntimeconfig.cache
+/Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.Infrastructure/obj/Debug/net9.0/ref/Order.Infrastructure.dll
