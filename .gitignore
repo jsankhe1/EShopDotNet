@@ -1,0 +1,314 @@
+# ========================================
+# 🔹 JetBrains Rider (IntelliJ IDEA for .NET)
+# ========================================
+.idea/
+.idea_modules/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/shelf/
+.idea/**/vcs.xml
+.idea/**/contentModel.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dictionaries/
+.idea/**/inspectionProfiles/
+.idea/**/gradle.xml
+.idea/**/libraries/
+.idea/**/modules.xml
+.idea/**/runConfigurations/
+.idea/**/misc.xml
+.idea/**/compiler.xml
+.idea/**/codeStyleSettings.xml
+.idea/**/coverage/
+.idea/**/sonarlint/
+
+# JetBrains Rider caches and logs
+.idea/caches/
+.idea/system/
+.idea/workspace.xml
+.idea/assetWizardSettings.xml
+.idea/httpRequests/
+
+# Rider logs and generated files
+.idea/**/workspace.xml
+.idea/**/shelf/
+.idea/**/tasks.xml
+.idea/**/dictionaries/
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/gradle.xml
+.idea/**/libraries/
+.idea/**/modules.xml
+.idea/**/runConfigurations/
+.idea/**/misc.xml
+.idea/**/compiler.xml
+.idea/**/codeStyleSettings.xml
+.idea/**/coverage/
+
+# Rider projects that use Unity
+.idea/Unity/**
+
+# JetBrains Rider File Templates
+.idea/**/fileTemplates/
+
+# JetBrains Rider other files
+.idea/**/watcherTasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/editor.xml
+.idea/**/fileTemplates.xml
+.idea/**/uiDesigner.xml
+
+# Ignore JetBrains Rider's external dependencies
+.idea/deployment.xml
+.idea/deployment/
+.idea/sonarlint/
+
+# ========================================
+# 🔹 macOS Specific
+# ========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS system files
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# macOS directory attributes
+.metadata_never_index
+.noindex
+
+# macOS Quick Look
+**/._*
+
+# ========================================
+# 🔹 Build Results & Generated Files
+# ========================================
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono auto-generated files
+mono_crash.*
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Oo]bj/
+[Bb]in/
+[Oo]ut/
+[Ll]og/
+[Ll]ogs/
+
+# Package restore
+node_modules/
+packages/
+[Pp]ackages/
+.nuget/
+
+# .NET Core Artifacts
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+
+# Rider Temp Directories
+out/
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/uiDesigner.xml
+
+# Rider Project-specific Logs
+.idea/sonarlint/
+.idea/deployment/
+.idea/dataSources/
+.idea/httpRequests/
+.idea/indexLayout.xml
+
+# Rider Logs
+.idea/inspectionProfiles/
+.idea/**/workspace.xml
+.idea/httpRequests/
+
+# Rider JetBrains logs
+.idea/**/usage.statistics.xml
+.idea/**/editor.xml
+.idea/**/fileTemplates.xml
+.idea/**/uiDesigner.xml
+
+# Rider .NET profiler
+.idea/.dotTrace/
+
+# Rider Shared index files
+.idea/.idea.*
+
+# ========================================
+# 🔹 Logs, Tests, and Coverage
+# ========================================
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+BenchmarkDotNet.Artifacts/
+
+# NUnit
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# MSTest
+*.coverage
+*.coveragexml
+
+# OpenCover UI analysis results
+OpenCover/
+
+# ========================================
+# 🔹 Additional Files
+# ========================================
+# Rider .NET profiler
+.idea/.dotTrace/
+
+# Rider Shared index files
+.idea/.idea.*
+
+# Rider External Libraries
+.idea/deployment.xml
+.idea/deployment/
+.idea/sonarlint/
+
+# JetBrains Rider other files
+.idea/**/fileTemplates.xml
+.idea/**/watcherTasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/editor.xml
+.idea/**/fileTemplates.xml
+.idea/**/uiDesigner.xml
+.idea/**/projectSettings.xml
+
+# ========================================
+# 🔹 SQL Server & Databases
+# ========================================
+*.mdf
+*.ldf
+*.ndf
+
+# Local database backups
+*.bak
+*.dbmdl
+*.dbproj.schemaview
+*.rptproj.rsuser
+
+# ========================================
+# 🔹 IDE, Editor & Debugging Files
+# ========================================
+.vscode/
+*.vspscc
+*.vssscc
+*.userprefs
+*.suo
+*.ncb
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+*.opendb
+*.opensdf
+*.sdf
+*.aps
+*.sln.docstates
+
+# Rider caches
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/sonarlint/
+.idea/usage.statistics.xml
+.idea/vcs.xml
+.idea/httpRequests/
+.idea/httpRequests/*
+
+# Ignore JetBrains Rider External Dependencies
+.idea/deployment.xml
+.idea/deployment/
+.idea/sonarlint/
+.idea/indexLayout.xml
+
+# Ignore Rider Logs and Cached Files
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/sonarlint/
+.idea/usage.statistics.xml
+.idea/httpRequests/
+.idea/httpRequests/*
+.idea/assetWizardSettings.xml
+
+# Rider Index
+.idea/.idea.*
+
+# Rider Local History
+.localhistory/
+
+# Rider Coverage Files
+.idea/coverage/
+
+# Rider Output & Build Files
+.idea/out/
+.idea/out/**
+
+# Rider Git Hooks (if using)
+.idea/hooks/
+
+# Rider Gradle
+.idea/gradle.xml
+.idea/gradle_settings.xml
+
+# Rider Plugins
+.idea/plugins/
+
+# Rider Deployment
+.idea/deployment/
+.idea/deployment.xml
+
+# Rider External Tools
+.idea/externalTools.xml
+
+# Rider JetBrains logs
+.idea/.dotTrace/
+.idea/.idea.*
+
+# Ignore temporary files generated by Rider
+.idea/temp/
+.idea/system/
+
+# Rider Files
+.idea/.idea.*
+.idea/.gitignore
+.idea/.git/
+
+# Ignore temporary files generated by macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.metadata_never_index
+.noindex

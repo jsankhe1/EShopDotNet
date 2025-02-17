@@ -27,3 +27,4 @@
 /Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.ApplicationCore/obj/Debug/net9.0/Order.ApplicationCore.pdb
 /Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.ApplicationCore/obj/Debug/net9.0/Order.ApplicationCore.genruntimeconfig.cache
 /Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.ApplicationCore/obj/Debug/net9.0/ref/Order.ApplicationCore.dll
+/Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.ApplicationCore/obj/Debug/net9.0/Order.ApplicationCore.sourcelink.json

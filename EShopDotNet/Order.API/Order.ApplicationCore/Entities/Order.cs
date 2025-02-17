@@ -17,4 +17,6 @@ public class Order
 
     // Navigation Properties
     public ICollection<OrderDetails> OrderDetails { get; set; } = new List<OrderDetails>();
+    public ICollection<PaymentMethod> PaymentMethods { get; set; } = new List<PaymentMethod>();
+    public Customer Customer { get; set; }
 }

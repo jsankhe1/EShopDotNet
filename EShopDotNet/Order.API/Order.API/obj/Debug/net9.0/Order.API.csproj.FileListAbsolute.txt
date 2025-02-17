@@ -561,3 +561,4 @@
 /Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.API/obj/Debug/net9.0/Order.API.pdb
 /Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.API/obj/Debug/net9.0/Order.API.genruntimeconfig.cache
 /Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.API/obj/Debug/net9.0/ref/Order.API.dll
+/Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.API/obj/Debug/net9.0/Order.API.sourcelink.json

@@ -33,3 +33,4 @@
 /Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.Infrastructure.pdb
 /Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.Infrastructure.genruntimeconfig.cache
 /Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.Infrastructure/obj/Debug/net9.0/ref/Order.Infrastructure.dll
+/Users/psionicedge/RiderProjects/ANTRA/Assignments/EShopDotNet/EShopDotNet/Order.API/Order.Infrastructure/obj/Debug/net9.0/Order.Infrastructure.sourcelink.json
