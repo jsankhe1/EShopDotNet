@@ -16,7 +16,8 @@ public interface IOrderServiceAsync
     Task<string> CheckOrderStatusAsync(int orderId);
     Task<(bool IsSuccess, OrderResponseModel? Data, string? ErrorMessage)> CompleteOrderAsync(int orderId);
     Task<(bool IsSuccess, OrderResponseModel? Data, string? ErrorMessage)> CancelOrderAsync(int orderId);
+    Task<OrderResponseModel> UpdateOrderAsync(OrderRequestModel orderRequestModel);
 
-    Task<bool> UpdateOrderStatusAsync(int id, string status);
+    // Task<bool> UpdateOrderStatusAsync(int id, string status);
 
 }

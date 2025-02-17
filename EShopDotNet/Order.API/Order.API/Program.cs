@@ -38,6 +38,10 @@ builder.Services.AddScoped<IUserAddressRepository, UserAddressRepository>();
 
 
 builder.Services.AddScoped<IOrderServiceAsync, OrderServiceAsync>();
+builder.Services.AddScoped<ICustomerServiceAsync, CustomerServiceAsync>();
+builder.Services.AddScoped<IPaymentServiceAsync, PaymentServiceAsync>();
+builder.Services.AddScoped<IShoppingCartServiceAsync, ShoppingCartServiceAsync>();
+builder.Services.AddScoped<IShoppingCartItemServiceAsync, ShoppingCartItemServiceAsync>();
 
 
 

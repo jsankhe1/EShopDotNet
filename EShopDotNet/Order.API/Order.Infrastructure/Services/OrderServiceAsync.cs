@@ -94,7 +94,12 @@ public class OrderServiceAsync : IOrderServiceAsync
         return (true, orderOut, null);
     }
 
-    
+    public async Task<OrderResponseModel> UpdateOrderAsync(OrderRequestModel orderRequestModel)
+    {
+        var order = _mapper.Map<ApplicationCore.Entities.Order>(orderRequestModel);
+        order = await _orderRepository.UpdateAsync(order);
+        return _mapper.Map<OrderResponseModel>(order);
+    }
 
 
     public async Task<bool> UpdateOrderStatusAsync(int id, string status)
