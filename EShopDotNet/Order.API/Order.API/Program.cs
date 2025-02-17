@@ -15,8 +15,11 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<OrderDbContext>(option =>
-    option.UseSqlServer(builder.Configuration.GetConnectionString("EcommOrders"))); //Injecting DbContext.
+
+
+builder.Services.AddDbContext<OrderDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("EcommerceOrders")));
+
 
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IOrderServiceAsync, OrderServiceAsync>();

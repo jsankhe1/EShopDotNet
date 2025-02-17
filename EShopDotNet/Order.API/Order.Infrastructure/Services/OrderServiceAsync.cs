@@ -37,10 +37,8 @@ public class OrderServiceAsync : IOrderServiceAsync
 
     public async Task<IEnumerable<OrderResponseModel>> GetOrderByCustomerId(int customerId)
     {
-        var response = _mapper.Map<IEnumerable<OrderResponseModel>>
-            (await _orderRepository.GetAll().Where(o => o.CustomerId == customerId).ToListAsync());
-
-        return response;
+        var orders = await _orderRepository.GetOrdersByCustomerId(customerId).ToListAsync();
+        return _mapper.Map<IEnumerable<OrderResponseModel>>(orders);
     }
 
     public async Task<OrderResponseModel> GetByIdAsync(int id)

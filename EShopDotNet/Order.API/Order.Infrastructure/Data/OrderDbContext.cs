@@ -161,10 +161,9 @@ public class OrderDbContext : DbContext
             entity.Property(e => e.PaymentTypeId).IsRequired();
             entity.Property(e => e.Provider).HasMaxLength(100).IsRequired();
             entity.Property(e => e.AccountNumber).HasMaxLength(50).IsRequired();
-            entity.Property(e => e.Expiry).HasColumnType("datetime");
+            entity.Property(e => e.Expiry).HasColumnType("date");
             entity.Property(e => e.IsDefault).IsRequired();
         });
-        
         
     }
 }

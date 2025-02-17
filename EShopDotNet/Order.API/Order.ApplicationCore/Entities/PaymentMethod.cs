@@ -7,7 +7,7 @@ public class PaymentMethod
     public string Provider { get; set; }
     public string AccountType { get; set; }
     public string AccountNumber { get; set; }
-    public string Expiry { get; set; }
+    public DateTime Expiry { get; set; }
     public bool IsDefault { get; set; }
 
     

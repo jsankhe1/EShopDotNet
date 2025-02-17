@@ -1,3 +1,5 @@
+using System.Collections;
+using Microsoft.EntityFrameworkCore;
 using Order.ApplicationCore.Contracts.Interfaces;
 using Order.Infrastructure.Data;
 
@@ -13,5 +15,10 @@ public class OrderRepository : BaseRepository<ApplicationCore.Entities.Order>, I
     }
 
 
-
+    public IQueryable<ApplicationCore.Entities.Order> GetOrdersByCustomerId(int customerId)
+    {
+        return _orderDbContext.Orders
+            .Include(o => o.OrderDetails)
+            .Where(o => o.CustomerId == customerId);
+    }
 }
