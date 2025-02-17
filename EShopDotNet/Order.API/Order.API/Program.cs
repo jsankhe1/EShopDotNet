@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Order.ApplicationCore.Contracts.Interfaces;
 using Order.ApplicationCore.Contracts.Services;
+using Order.ApplicationCore.Entities;
 using Order.ApplicationCore.Helpers;
 using Order.Infrastructure.Data;
 using Order.Infrastructure.Repositories;
@@ -20,9 +21,27 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<OrderDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("EcommerceOrders")));
 
-
+//  and ServiDependency Injectiions for Repositories
+builder.Services.AddScoped<IAddressRepository, AddressRepository>();
+builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+builder.Services.AddScoped<IPaymentMethodRepository, PaymentMethodRepository>();
+builder.Services.AddScoped<IShoppingCartRepository, ShoppingCartRepository>();
+builder.Services.AddScoped<IShoppingCartItemRepository, ShoppingCartItemRepository>();
+builder.Services.AddScoped<IUserAddressRepository, UserAddressRepository>();
+
+
+
+// Dependency Injectiions for Services
+
+
+
 builder.Services.AddScoped<IOrderServiceAsync, OrderServiceAsync>();
+
+
+
+//Automapper DI
 builder.Services.AddAutoMapper(typeof(ApplicationMapper));
 builder.Services.AddMemoryCache();
 var app = builder.Build();

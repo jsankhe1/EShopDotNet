@@ -5,13 +5,18 @@ namespace Order.ApplicationCore.Contracts.Services;
 
 public interface IOrderServiceAsync
 {
-    Task<IEnumerable<OrderResponseModel>> GetAllAsync();
-    Task<IEnumerable<OrderResponseModel>> GetOrderByCustomerId(int customerId);
-    Task<OrderResponseModel> GetByIdAsync(int id);
+    Task<IEnumerable<OrderResponseModel>> GetAllOrdersAsync();
+    
+    Task<OrderResponseModel> InsertAsync(OrderRequestModel reqModel);
+    
+    // Returns orders for a specific customer (Order History)
+    Task<IEnumerable<OrderDetailResponseModel>> CheckOrderHistoryAsync(int customerId);
+    
+    // Returns a specific order (e.g., to check order status)
+    Task<string> CheckOrderStatusAsync(int orderId);
+    Task<(bool IsSuccess, OrderResponseModel? Data, string? ErrorMessage)> CompleteOrderAsync(int orderId);
+    Task<(bool IsSuccess, OrderResponseModel? Data, string? ErrorMessage)> CancelOrderAsync(int orderId);
 
-    Task<int> InsertAsync(OrderRequestModel reqModel);
-    Task<int> UpdateAsync(OrderRequestModel reqModel);
-
-    Task<int> DeleteByIdAsync(int id);
+    Task<bool> UpdateOrderStatusAsync(int id, string status);
 
 }

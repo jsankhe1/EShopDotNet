@@ -23,10 +23,11 @@ public class BaseRepository<T> : IRepository<T> where T:class
         return await _orderDbContext.FindAsync<T>(id);
     }
 
-    public async Task<int> InsertAsync(T entity)
+    public async Task<T> InsertAsync(T entity)
     {
         await _orderDbContext.Set<T>().AddAsync(entity);
-        return await _orderDbContext.SaveChangesAsync();
+         await _orderDbContext.SaveChangesAsync();
+         return entity;
     }
 
     public async Task<int> DeleteByIdAsync(int id)
@@ -40,9 +41,10 @@ public class BaseRepository<T> : IRepository<T> where T:class
         return await _orderDbContext.SaveChangesAsync();
     }
 
-    public async Task<int> UpdateAsync(T entity)
+    public async Task<T> UpdateAsync(T entity)
     {
-        _orderDbContext.Set<T>().Entry(entity).State = EntityState.Modified;
-        return await _orderDbContext.SaveChangesAsync();
+        _orderDbContext.Set<T>().Entry(entity).State = EntityState.Modified; 
+        await _orderDbContext.SaveChangesAsync();
+        return entity;
     }
 }

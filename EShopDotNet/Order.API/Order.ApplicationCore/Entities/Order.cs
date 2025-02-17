@@ -12,11 +12,22 @@ public class Order
     public string? PaymentName { get; set; }
     public string? ShippingAddress { get; set; }
     public string? ShippingMethod { get; set; }
-    public string? OrderStatus { get; set; }
+    public OrderStatus OrderStatus { get; set; } // set by an enum.
     [Required(ErrorMessage = "Bill Amount can't be blank")]public decimal? BillAmount { get; set; }
 
     // Navigation Properties
     public ICollection<OrderDetails> OrderDetails { get; set; } = new List<OrderDetails>();
     public ICollection<PaymentMethod> PaymentMethods { get; set; } = new List<PaymentMethod>();
     public Customer Customer { get; set; }
+}
+
+public enum OrderStatus
+{
+    Pending,        
+    Processing,     
+    Shipped,        
+    Delivered,      
+    Completed,      
+    Cancelled,       
+    Returned
 }
