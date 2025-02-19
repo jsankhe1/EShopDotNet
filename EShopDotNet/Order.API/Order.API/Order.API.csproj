@@ -25,4 +25,11 @@
       <ProjectReference Include="..\Order.Infrastructure\Order.Infrastructure.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Areas\ShoppingCartController\Controllers\" />
+      <Folder Include="Areas\ShoppingCartController\Data\" />
+      <Folder Include="Areas\ShoppingCartController\Models\" />
+      <Folder Include="Areas\ShoppingCartController\Views\" />
+    </ItemGroup>
+
 </Project>

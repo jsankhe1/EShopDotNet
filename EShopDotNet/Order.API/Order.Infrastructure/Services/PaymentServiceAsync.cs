@@ -1,4 +1,8 @@
+using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using Order.ApplicationCore.Contracts.Interfaces;
 using Order.ApplicationCore.Contracts.Services;
+using Order.ApplicationCore.Entities;
 using Order.ApplicationCore.Models.RequestModels;
 using Order.ApplicationCore.Models.ResponseModels;
 
@@ -6,23 +10,42 @@ namespace Order.Infrastructure.Services;
 
 public class PaymentServiceAsync : IPaymentServiceAsync
 {
-    public Task<IEnumerable<PaymentResponseModel>> GetPaymentByCustomerIdAsync(int customerId)
+    private readonly IPaymentMethodRepository _paymentMethodRepository;
+    private readonly IOrderRepository _orderRepository;
+    private readonly IMapper _mapper;
+
+    public PaymentServiceAsync(IPaymentMethodRepository paymentMethodRepository, IOrderRepository orderRepository,
+        IMapper mapper)
     {
-        throw new NotImplementedException();
+        _paymentMethodRepository = paymentMethodRepository;
+        _orderRepository = orderRepository;
+        _mapper = mapper;
     }
 
-    public Task<PaymentResponseModel> InsertAsync(PaymentRequestModel paymentRequestModel)
+  
+
+    public async Task<IEnumerable<PaymentResponseModel>> GetPaymentByCustomerIdAsync(int customerId)
     {
-        throw new NotImplementedException();
+        var customerPayment =  await _orderRepository.GetPaymentByCustomerId(customerId).ToListAsync();
+        return _mapper.Map<IEnumerable<PaymentResponseModel>>(customerPayment);
     }
 
-    public Task<int> DeleteAsync(int id)
+    public async Task<PaymentResponseModel> InsertAsync(PaymentRequestModel paymentRequestModel)
     {
-        throw new NotImplementedException();
+        var paymentIn = _mapper.Map<PaymentMethod>(paymentRequestModel);
+        var paymentOut = await _paymentMethodRepository.InsertAsync(paymentIn);
+        return _mapper.Map<PaymentResponseModel>(paymentOut);
     }
 
-    public Task<PaymentResponseModel> UpdateAsync(PaymentRequestModel paymentRequestModel)
+    public async Task<int> DeleteAsync(int id)
     {
-        throw new NotImplementedException();
+        return await _paymentMethodRepository.DeleteByIdAsync(id);
+    }
+
+    public async Task<PaymentResponseModel> UpdateAsync(PaymentRequestModel paymentRequestModel)
+    {
+        var paymentIn = _mapper.Map<PaymentMethod>(paymentRequestModel);
+        var paymentOut = await _paymentMethodRepository.UpdateAsync(paymentIn);
+        return _mapper.Map<PaymentResponseModel>(paymentOut);
     }
 }

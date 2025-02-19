@@ -1,4 +1,8 @@
+using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using Order.ApplicationCore.Contracts.Interfaces;
 using Order.ApplicationCore.Contracts.Services;
+using Order.ApplicationCore.Entities;
 using Order.ApplicationCore.Models.RequestModels;
 using Order.ApplicationCore.Models.ResponseModels;
 
@@ -6,18 +10,31 @@ namespace Order.Infrastructure.Services;
 
 public class ShoppingCartServiceAsync : IShoppingCartServiceAsync
 {
-    public Task<IEnumerable<ShoppingCartResponseModel>> GetShoppingCartByCustomerIdAsync(int customerId)
+    private readonly IMapper _mapper;
+    private readonly IShoppingCartRepository _shoppingCartRepository;
+
+    public ShoppingCartServiceAsync(IMapper mapper, IShoppingCartRepository shoppingCartRepository)
     {
-        throw new NotImplementedException();
+        _mapper = mapper;
+        _shoppingCartRepository = shoppingCartRepository;
+    }
+    public async Task<IEnumerable<ShoppingCartResponseModel>> GetShoppingCartByCustomerIdAsync(int customerId)
+    {
+        var shoppingCarts = _mapper.Map<IEnumerable<ShoppingCartResponseModel>>
+            (await _shoppingCartRepository.GetShoppingCartByCustomerId(customerId).ToListAsync());
+        return shoppingCarts;
     }
 
-    public Task<ShoppingCartResponseModel> InsertOrUpdateAsync(ShoppingCartRequestModel shoppingCartRequestModel)
+    public async Task<ShoppingCartResponseModel> InsertOrUpdateAsync(ShoppingCartRequestModel shoppingCartRequestModel)
     {
-        throw new NotImplementedException();
+        var shoppingCartIn = _mapper.Map<ShoppingCart>(shoppingCartRequestModel);
+        var shoppingCartOut = _mapper.Map<ShoppingCartResponseModel>(await _shoppingCartRepository.InsertAsync(shoppingCartIn));
+        return shoppingCartOut;
+
     }
 
-    public Task<int> DeleteAsync(int id)
+    public async Task<int> DeleteAsync(int id)
     {
-        throw new NotImplementedException();
+        return await _shoppingCartRepository.DeleteByIdAsync(id);
     }
 }

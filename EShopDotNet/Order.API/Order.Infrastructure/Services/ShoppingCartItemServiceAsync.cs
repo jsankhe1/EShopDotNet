@@ -1,11 +1,21 @@
+using AutoMapper;
+using Order.ApplicationCore.Contracts.Interfaces;
 using Order.ApplicationCore.Contracts.Services;
 
 namespace Order.Infrastructure.Services;
 
 public class ShoppingCartItemServiceAsync : IShoppingCartItemServiceAsync
 {
-    public Task<int> DeleteByIdAsync(int id)
+    private readonly IMapper _mapper;
+    private readonly IShoppingCartItemRepository _shoppingCartItemRepository;
+
+    public ShoppingCartItemServiceAsync(IMapper mapper,IShoppingCartItemRepository shoppingCartItemRepository)
     {
-        throw new NotImplementedException();
+        _mapper = mapper;
+        _shoppingCartItemRepository = shoppingCartItemRepository;
+    }
+    public async Task<int> DeleteByIdAsync(int id)
+    {
+        return await _shoppingCartItemRepository.DeleteByIdAsync(id);
     }
 }
