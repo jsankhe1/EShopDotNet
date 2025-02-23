@@ -11,9 +11,13 @@ public class ProductDbContext : DbContext
     }
 
     public DbSet<Product> Products { get; set; }
-    public CategoryVariation CategoryVariations { get; set; }
-    public ProductCategory ProductCategories { get; set; }
-    public VariationValue VariationValues { get; set; }
-    public ProductVariationValues ProductVariationValues { get; set; }
+    public DbSet<ProductCategory> ProductCategories { get; set; }
+    public DbSet<CategoryVariation> CategoryVariations { get; set; }
+    public DbSet<VariationValue> VariationValues { get; set; }
+    public DbSet<ProductVariationValues> ProductVariationValues { get; set; }
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        // set constraints
+    }
 
 }
