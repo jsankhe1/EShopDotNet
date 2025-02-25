@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShippingMicroservice", "ShippingMicroservice\ShippingMicroservice.csproj", "{849817F6-A221-4C5B-9687-B98A64D9C3CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShippingMicroserivce.Core", "ShippingMicroserivce.Core\ShippingMicroserivce.Core.csproj", "{731A1B6E-916E-4D02-959F-4861A15800DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShippingMicroserivce.Infrastructure", "ShippingMicroserivce.Infrastructure\ShippingMicroserivce.Infrastructure.csproj", "{67420D6A-F4FB-44CC-A468-C13D3BE7D215}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{849817F6-A221-4C5B-9687-B98A64D9C3CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{849817F6-A221-4C5B-9687-B98A64D9C3CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{849817F6-A221-4C5B-9687-B98A64D9C3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{849817F6-A221-4C5B-9687-B98A64D9C3CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{731A1B6E-916E-4D02-959F-4861A15800DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{731A1B6E-916E-4D02-959F-4861A15800DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{731A1B6E-916E-4D02-959F-4861A15800DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{731A1B6E-916E-4D02-959F-4861A15800DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67420D6A-F4FB-44CC-A468-C13D3BE7D215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67420D6A-F4FB-44CC-A468-C13D3BE7D215}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67420D6A-F4FB-44CC-A468-C13D3BE7D215}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67420D6A-F4FB-44CC-A468-C13D3BE7D215}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

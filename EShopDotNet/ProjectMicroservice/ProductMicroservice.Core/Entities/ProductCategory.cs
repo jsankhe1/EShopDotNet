@@ -1,8 +1,13 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace ProductMicroservice.Core.Entities;
 
 public class ProductCategory
 {
     public int Id { get; set; }
+    [MaxLength(100)]
+    [Column(TypeName = "nvarchar(100)")] // Explicitly storing as nvarchar(100)
     public string Name { get; set; }
     public int? ParentCategoryId { get; set; }
 

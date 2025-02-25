@@ -1,6 +1,8 @@
+using ProductMicroservice.Core.Contracts.Services;
+
 namespace ProductMicroservice.Infrastructure.Services;
 
-public class ProductVariationServiceAsync
+public class ProductVariationServiceAsync : IProductVariationSerivceAsync
 {
     
 }

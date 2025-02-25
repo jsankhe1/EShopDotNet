@@ -1,6 +1,8 @@
+using ProductMicroservice.Core.Entities;
+
 namespace ProductMicroservice.Core.Contracts.Interfaces;
 
-public class IVariationValueRepositoryAsync
+public interface IVariationValueRepositoryAsync : IRepository<VariationValue>
 {
     
 }

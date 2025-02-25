@@ -1,6 +1,8 @@
+using ProductMicroservice.Core.Entities;
+
 namespace ProductMicroservice.Core.Contracts.Interfaces;
 
-public class ICategoryVariationRepository
+public interface ICategoryVariationRepository : IRepository<CategoryVariation>
 {
     
 }

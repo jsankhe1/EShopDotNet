@@ -1,6 +1,6 @@
 namespace ProductMicroservice.Core.Contracts.Services;
 
-public interface ICategorySerivceAsync
+public interface ICategoryVariationSerivceAsync
 {
     
 }
