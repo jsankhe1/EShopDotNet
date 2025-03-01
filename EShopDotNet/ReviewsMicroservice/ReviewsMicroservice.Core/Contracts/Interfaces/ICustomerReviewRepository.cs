@@ -1,6 +1,8 @@
+using ReviewsMicroservice.Core.Entities;
+
 namespace ReviewsMicroservice.Core.Contracts.Interfaces;
 
-public interface ICustomerReviewRepository
+public interface ICustomerReviewRepository : IRepository<CustomerReview>
 {
     
 }

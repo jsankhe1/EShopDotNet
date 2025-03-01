@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PromotionsMicroservice.Core.Entities;
 
-public class PromotionDetails
+public class PromotionDetail
 {
     public int Id { get; set; }
     public int PromotionId { get; set; }

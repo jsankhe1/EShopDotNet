@@ -24,15 +24,20 @@ public class Promotion
     [Range(0.01, 100, ErrorMessage = "Discount must be between 0.01 and 100")]
     public decimal Discount { get; set; }
 
-    [Required]
-    public DateTime StartDate { get; set; }
+    [Required] public DateTime StartDate { get; set; }
 
 
-    [Required]
-    public DateTime EndDate { get; set; }
-    
-        
+    [Required] public DateTime EndDate { get; set; }
+    public PromotionState PromotionState { get; set; }
+
+
     // Navigation Props
 
-    public ICollection<PromotionDetails> PromotionDetails { get; set; }
+    public ICollection<PromotionDetail> PromotionDetails { get; set; }
 }
+
+public enum PromotionState
+    {
+        Active,
+        InActive
+    }

@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProductMicroservice.Core.Contracts.Services;
+using ProductMicroservice.Core.Models.RequestModels;
 
 namespace ProductMicroservice.Controllers
 {
@@ -17,53 +18,66 @@ namespace ProductMicroservice.Controllers
         
 
 
-
         [HttpGet]
-        public Task<IActionResult> GetListProducts()
+        public async Task<IActionResult> GetListProducts(int pageId = 1, int pageSize = 10, int? categoryId = null)
         {
+
             throw new NotImplementedException();
         }
 
         [HttpGet]
-        public Task<IActionResult> GetProductById(int id)
+        public async Task<IActionResult> GetProductById(int id)
         {
-            throw new NotImplementedException();
+            var response = await _productSerivceAsync.GetByIdAsync(id);
+            return Ok(response);
         }
 
         [HttpPost]
-        public Task<IActionResult> SaveProduct()
+        public async Task<IActionResult> Save(ProductRequestModel productRequestModel)
         {
-            throw new NotImplementedException();
+            var response = await _productSerivceAsync.InsertAsync(productRequestModel);
+            if (response == 1)
+            {
+                return Ok("Saved");
+            }
+            else
+            {
+                return BadRequest("Error");
+            }
+        }
+        [HttpPut]
+        public async Task<IActionResult> Update(ProductRequestModel productRequestModel)
+        {
+            var response = await _productSerivceAsync.UpdateAsync(productRequestModel);
+            if (response == 1)
+            {
+                return Ok("Saved");
+            }
+            else
+            {
+                return BadRequest("Error");
+            }
         }
 
-        [HttpPut]
-        public Task<IActionResult> Update()
-        {
-            throw new NotImplementedException();
-            
-        }
-        
-        [HttpPut]
-        public Task<IActionResult> InActive()
-        {
-            throw new NotImplementedException();
-        }
         [HttpGet]
-        public Task<IActionResult> GetProductByCategoryId(int categoryId)
+        public async Task<IActionResult> GetProductByCategoryId(int categoryId)
         {
-            throw new NotImplementedException();
+            var response = await _productSerivceAsync.GetProductByCategoryId(categoryId);
+            return Ok(response);
         }
-        
+
         [HttpGet]
-        public Task<IActionResult> GetProductByName(string producyNsmr)
+        public async Task<IActionResult> GetProductByName(string name)
         {
-            throw new NotImplementedException();
+            var response = await _productSerivceAsync.GetProductByProductName(name);
+            return Ok(response);
         }
 
         [HttpDelete]
-        public Task<IActionResult> DeleteProduct()
+        public async Task<IActionResult> DeleteProduct(int id)
         {
-            throw new NotImplementedException();
+            var result = await _productSerivceAsync.DeleteAsync(id);
+            return Ok(result);
         }
     }
 }

@@ -24,11 +24,11 @@ public class BaseRepository<T> : IRepository<T> where T:class
         return await _productDbContext.Set<T>().FindAsync(id);
     }
 
-    public async Task<T> InsertAsync(T entity)
+    public async Task<int> InsertAsync(T entity)
     {
         await _productDbContext.Set<T>().AddAsync(entity);
-         await _productDbContext.SaveChangesAsync();
-         return entity;
+         return await _productDbContext.SaveChangesAsync();
+         
     }
 
     public async Task<int> UpdateAsync(T entity)

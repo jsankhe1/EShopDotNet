@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProductMicroservice.Core.Contracts.Services;
+using ProductMicroservice.Core.Models.RequestModels;
 
 namespace ProductMicroservice.Controllers
 {
@@ -15,50 +16,50 @@ namespace ProductMicroservice.Controllers
             _categorySerivceAsync = categorySerivceAsync;
         }
 
-        
+
         [HttpPost]
-        public Task<IActionResult> SaveCategory()
+        public async Task<IActionResult> SaveCategory(ProductCategoryRequestModel productCategoryRequestModel)
         {
-            throw new NotImplementedException();
+            var response = await _categorySerivceAsync.InsertAsync(productCategoryRequestModel);
+            if (response == 1)
+            {
+                return Ok("Saved!");
+            }
 
-            
+            else
+            {
+                return BadRequest("Not Saved, Error!");
+            }
         }
 
-        
+
         [HttpGet]
-        public Task<IActionResult> GetAllCategory()
+        public async Task<IActionResult> GetAllCategory()
         {
-            throw new NotImplementedException();
-
-            
-            
+            var response = await (_categorySerivceAsync.GetAllAsync());
+            return Ok(response);
         }
-        
+
         [HttpGet]
-        public Task<IActionResult> GetCategoryById(int id)
+        public async Task<IActionResult> GetCategoryById(int id)
         {
-            
-            throw new NotImplementedException();
-
+            var response = await (_categorySerivceAsync.GetByIdAsync(id));
+            return Ok(response);
         }
-
-
-
 
 
         [HttpDelete]
-
-        public Task<IActionResult> Delete()
+        public async Task<IActionResult> Delete(int id)
         {
-            throw new NotImplementedException();
-
+            var response = await _categorySerivceAsync.DeleteAsync(id);
+            return Ok(response);
         }
-        
+
         [HttpGet]
-        public Task<IActionResult> GetCategoryByParentCategoryId(int parentId)
+        public async Task<IActionResult> GetCategoryByParentCategoryId(int parentId)
         {
-            
-            throw new NotImplementedException();
+            var response = await _categorySerivceAsync.GetCategoryByParentCategoryId(parentId);
+            return Ok(response);
 
         }
     }

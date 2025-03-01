@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProductMicroservice.Core.Contracts.Services;
+using ProductMicroservice.Core.Models.RequestModels;
 
 namespace ProductMicroservice.Controllers
 {
@@ -15,15 +16,25 @@ namespace ProductMicroservice.Controllers
             _variationValueSerivceAsync = variationValueSerivceAsync;
         }
         [HttpPost]
-        public Task<IActionResult> Save()
+        public async Task<IActionResult> Save(VariationValueRequestModel variationValueRequestModel)
         {
-            throw new NotImplementedException();
+            var response = await _variationValueSerivceAsync.InsertAsync(variationValueRequestModel);
+            if (response == 1)
+            {
+                return Ok("Saved!");
+            }
+
+            else
+            {
+                return BadRequest("Not Saved, Error!");
+            }
         }
     
         [HttpGet]
-        public Task<IActionResult> GetProductVariationById(int id)
+        public async Task<IActionResult> GetVariationId()
         {
-            throw new NotImplementedException();
+            var response = await _variationValueSerivceAsync.GetAllAsync();
+            return Ok(response);
         }
     }
     
